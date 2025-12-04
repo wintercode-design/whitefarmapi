@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/c-lients",
+      "handler": "c-lients.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/c-lients/count",
+      "handler": "c-lients.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/c-lients/:id",
+      "handler": "c-lients.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/c-lients",
+      "handler": "c-lients.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/c-lients/:id",
+      "handler": "c-lients.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/c-lients/:id",
+      "handler": "c-lients.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jobs",
+  "info": {
+    "name": "Job"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "summery": {
+      "type": "text"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "dateline": {
+      "type": "datetime"
+    },
+    "cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "reference": {
+      "type": "email"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "CDI",
+        "CDD",
+        "Contract"
+      ]
+    },
+    "posts": {
+      "type": "integer"
+    },
+    "contact": {
+      "type": "biginteger"
+    }
+  }
+}
